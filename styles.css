@@ -1,110 +1,113 @@
-@font-face
-{
+@font-face {
     font-family: "myfont";
-    src:url('assets/fonts/FontsFree-Net-ir_sans.ttf') format('truetype');
+    src: url('assets/fonts/FontsFree-Net-ir_sans.ttf') format('truetype');
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     font-family: "myfont";
 }
-body
-{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
-.container
-{
+
+.container {
     width: 90%;
-    height: auto; /*default*/
+    height: auto;
+    /*default*/
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     margin-top: 20px;
-    
 }
-.header
-{
+
+.header {
     width: 100%;
     display: flex;
-    justify-content: start;/*left directon*/
+    justify-content: start;
+    /*left directon*/
     align-items: center;
 }
-.contact
-{
+
+.contact {
     width: 100%;
     height: 220px;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.div-title
-{
+
+.div-title {
     width: 70%;
-    background-color:#5b5bff;
+    background-color: #78af58;
     height: 220px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding:0px 30px; /*top-bottom   right-left*/
-    position: relative; /*parent -->title-btn */
+    padding: 0px 30px;
+    /*top-bottom   right-left*/
+    position: relative;
+    /*parent -->title-btn */
 }
-.div-form
-{
+
+.div-form {
     width: 30%;
-    background-color:#f0f0f0;
+    background-color: #f0f0f0;
     height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.title{
+
+.title {
     font-size: 13px;
-    color:white;
+    color: white;
     direction: rtl;
-   text-align: center;
+    text-align: center;
 }
-.title-btn
-{
-    background-color:#0101aa;
-    color:white;
+
+.title-btn {
+    background-color: #0101aa;
+    color: white;
     height: 30px;
     font-family: "myfont";
-    font-size:13px;
-    cursor:pointer;
-    outline:none;
-    border:none;
-    padding:5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
     position: absolute;
     bottom: 30px;
-    
 }
-.input 
-{
-    margin: 5px 0px;/*top-bottom     right-left*/
+
+.input {
+    margin: 5px 0px;
+    /*top-bottom     right-left*/
     width: 90%;
     height: 35px;
-    border:1px solid lightgray;
-
+    border: 1px solid lightgray;
 }
-.input::placeholder
-{
-    text-align: center; /*دسترسی به داخل placeholder*/
+
+.input::placeholder {
+    text-align: center;
+    /*دسترسی به داخل placeholder*/
     font-size: 13px;
     font-family: "myfont";
-
 }
-.form-btn
-{
+
+.form-btn {
     width: 90%;
     height: 35px;
     background-color: rgb(68, 68, 255);
@@ -114,129 +117,122 @@ body
     outline: none;
     cursor: pointer;
     margin-top: 5px;
-    padding: 0px 10px;;
+    padding: 0px 10px;
+    ;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.remember
-{
-    color:#2E2DEE;
+
+.remember {
+    color: #2E2DEE;
     font-size: 12px;
     /*text-decoration: none;*/
     margin-top: 30px;
-
 }
-.weblog-title
-{
+
+.weblog-title {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     margin: 20px 0px;
-} 
-hr{
-   color: #000;
-   width: 100%;
 }
-.weblog-title p
-{
+
+hr {
+    color: #000;
+    width: 100%;
+}
+
+.weblog-title p {
     padding: 0 10px;
     font-size: 13px;
-    color:blue;
+    color: blue;
     text-align: center;
     width: 300px;
 }
-.div-box
-{
+
+.div-box {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;/*المان هایی که در یک سطر جا نمی گیرند به خط بعد می برد*/
-    margin-bottom:20px;
+    flex-wrap: wrap;
+    /*المان هایی که در یک سطر جا نمی گیرند به خط بعد می برد*/
+    margin-bottom: 20px;
 }
-.card
-{
+
+.card {
     width: 300px;
     height: 180px;
     direction: rtl;
-    background-color:rgba(211, 211, 211, 0.5);
+    background-color: rgba(211, 211, 211, 0.5);
     padding: 10px;
     margin: 1px;
-   
 }
-.card-title
-{
+
+.card-title {
     /* first p tag in card*/
-    padding: 0 3px; /* top-bottom   right-left*/
+    padding: 0 3px;
+    /* top-bottom   right-left*/
     font-size: 12px;
-    color:blue;
+    color: blue;
     margin: 10px;
 }
-.card-link
-{
-    color:gray;
+
+.card-link {
+    color: gray;
     margin-right: 10px;
 }
 
-
-.card-description
-{
+.card-description {
     font-size: 12px;
     margin: 10px;
 }
-.footer
-{
+
+.footer {
     width: 100%;
-   
 }
-.footer ul
-{
+
+.footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.footer ul li{
+
+.footer ul li {
     list-style-type: none;
     font-size: 12px;
     margin: 0 5px;
 }
-@media screen and (max-width:900px)
-{
-    .contact
-    {
-    /*کمتر از 900 پیکسل*/
-   
-     display: flex;
-    flex-direction:column;
-    margin-top: 20px;
-    align-items: center;
 
+@media screen and (max-width:900px) {
+    .contact {
+        /*کمتر از 900 پیکسل*/
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
     }
-    .div-title ,
-    .div-form
-    {
+    .div-title,
+    .div-form {
         width: 100%;
-
     }
-    .div-title
-    {
-        padding:70px;
+    .div-title {
+        padding: 70px;
     }
-    .header img
-    {
+    .header img {
         display: none;
     }
-    .weblog-title
-    {
+    .weblog-title {
         margin-top: 100px;
     }
-
 }
+
 @media screen and (max-width: 1230px) {
     .footer {
         display: none;

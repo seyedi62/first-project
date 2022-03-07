@@ -1,0 +1,244 @@
+@font-face
+{
+    font-family: "myfont";
+    src:url('assets/fonts/FontsFree-Net-ir_sans.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    font-family: "myfont";
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container
+{
+    width: 90%;
+    height: auto; /*default*/
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 20px;
+    
+}
+.header
+{
+    width: 100%;
+    display: flex;
+    justify-content: start;/*left directon*/
+    align-items: center;
+}
+.contact
+{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.div-title
+{
+    width: 70%;
+    background-color:#5b5bff;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding:0px 30px; /*top-bottom   right-left*/
+    position: relative; /*parent -->title-btn */
+}
+.div-form
+{
+    width: 30%;
+    background-color:#f0f0f0;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 13px;
+    color:white;
+    direction: rtl;
+   text-align: center;
+}
+.title-btn
+{
+    background-color:#0101aa;
+    color:white;
+    height: 30px;
+    font-family: "myfont";
+    font-size:13px;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    padding:5px 10px;
+    position: absolute;
+    bottom: 30px;
+    
+}
+.input 
+{
+    margin: 5px 0px;/*top-bottom     right-left*/
+    width: 90%;
+    height: 35px;
+    border:1px solid lightgray;
+
+}
+.input::placeholder
+{
+    text-align: center; /*دسترسی به داخل placeholder*/
+    font-size: 13px;
+    font-family: "myfont";
+
+}
+.form-btn
+{
+    width: 90%;
+    height: 35px;
+    background-color: rgb(68, 68, 255);
+    font-family: "myfont";
+    font-size: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 0px 10px;;
+}
+a{
+    text-decoration: none;
+}
+.remember
+{
+    color:#2E2DEE;
+    font-size: 12px;
+    /*text-decoration: none;*/
+    margin-top: 30px;
+
+}
+.weblog-title
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    margin: 20px 0px;
+} 
+hr{
+   color: #000;
+   width: 100%;
+}
+.weblog-title p
+{
+    padding: 0 10px;
+    font-size: 13px;
+    color:blue;
+    text-align: center;
+    width: 300px;
+}
+.div-box
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;/*المان هایی که در یک سطر جا نمی گیرند به خط بعد می برد*/
+    margin-bottom:20px;
+}
+.card
+{
+    width: 300px;
+    height: 180px;
+    direction: rtl;
+    background-color:rgba(211, 211, 211, 0.5);
+    padding: 10px;
+    margin: 1px;
+   
+}
+.card-title
+{
+    /* first p tag in card*/
+    padding: 0 3px; /* top-bottom   right-left*/
+    font-size: 12px;
+    color:blue;
+    margin: 10px;
+}
+.card-link
+{
+    color:gray;
+    margin-right: 10px;
+}
+
+
+.card-description
+{
+    font-size: 12px;
+    margin: 10px;
+}
+.footer
+{
+    width: 100%;
+   
+}
+.footer ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0 5px;
+}
+@media screen and (max-width:900px)
+{
+    .contact
+    {
+    /*کمتر از 900 پیکسل*/
+   
+     display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    align-items: center;
+
+    }
+    .div-title ,
+    .div-form
+    {
+        width: 100%;
+
+    }
+    .div-title
+    {
+        padding:70px;
+    }
+    .header img
+    {
+        display: none;
+    }
+    .weblog-title
+    {
+        margin-top: 100px;
+    }
+
+}
+@media screen and (max-width: 1230px) {
+    .footer {
+        display: none;
+    }
+}
